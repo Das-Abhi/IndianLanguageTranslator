@@ -7,7 +7,7 @@ You should have python3.7(or later) and pip installed on your machine.
 ```shell
 pip3 install -r requirements.txt
 ```
-If _torch_ library is not working correctly, you can install it from  their [website](https://pytorch.org/get-started/locally/).
+If _torch_ library is not working correctly, you can install it from their [website](https://pytorch.org/get-started/locally/).
 
 ```shell
 pip3 install torch torchvision --extra-index-url https://download.pytorch.org/whl/cpu
@@ -19,7 +19,7 @@ Translation is the task of converting text from one language to another.
 
 Translation converts a sequence of text from one language to another. It is one of several tasks you can formulate as a sequence-to-sequence problem, a powerful framework that extends to vision and audio tasks.
 
-This is a sequence-to-sequence task, which means it’s a problem that can be formulated as going from one sequence to another. In that sense the problem is pretty close to summarization, and you could adapt what we will see here to other sequence-to-sequence problems such as:
+This is a sequence-to-sequence task, which means it’s a problem that can be formulated as going from one sequence to another. In that sense the problem is pretty close to summarization, and we can adapt what we will see here to other sequence-to-sequence problems such as:
 
 - Style transfer: Creating a model that translates texts written in a certain style to another (e.g., formal to casual or Shakespearean English to modern English)
 - Generative question answering: Creating a model that generates answers to questions, given a context
@@ -48,7 +48,7 @@ print(translated)
 # We are Infoweb. This is a natural language translation project
 ```
 
-source-language: [Hindi, Urdu, Telugu, Tamil, Odia]
+source-language: [Hindi, Urdu] (Telugu, Tamil, Odia to be added in future release)
 
 target-language: English
 
@@ -78,8 +78,7 @@ It receives request in POST method and calls translator function in trans_util.p
 And returns the data as JSON format.
 ```
 5) models folder
-'''
+```
 It includes translation model for hindi and urdu language for now. You can see the document details in above (How it works) for model works.
-'''
-
+```
 In registerUi.js file, you can change the endpoint, and change/add parameters here.
